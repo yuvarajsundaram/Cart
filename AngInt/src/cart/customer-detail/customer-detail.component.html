@@ -1,0 +1,13 @@
+<div class="detail">
+    <!-- <div class="name-hdr">{{customer?.firstName}}  {{customer?.lastName}}</div> -->
+    <div class="name-hdr">
+        <div class="row">
+            <div class="col-md-10">{{customer?.firstName}} {{customer?.lastName}}</div>
+            <div class="col-md-2 pdg-cls" (click)="close()">
+                <span>X</span>
+            </div>
+        </div>
+    </div>
+    <div>{{customer?.city}}</div>
+    <div><a href="javascript:void(0)" (click)="goToCustomerOrder()">{{getLinkName()}}</a></div>
+</div>

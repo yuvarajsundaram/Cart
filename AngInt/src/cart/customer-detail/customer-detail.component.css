@@ -1,0 +1,16 @@
+.detail {
+    display: block;
+    border: 1px solid black;
+    width: 66%;
+    margin-top: 10%;
+} 
+
+.name-hdr {
+    display: block;
+    border: 1px solid black;
+    background-color: #3C99DC;
+}
+
+.pdg-cls {
+    padding-left: 4%;
+}

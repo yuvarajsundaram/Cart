@@ -1,0 +1,23 @@
+<div class="customer">
+    <h4>Customers</h4>
+
+    <div class="row">
+        <div class="col-md-3">First Name:</div>
+        <div class="col-md-3">Last Name:</div>
+        <div class="col-md-3">City:</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><input id="fname" type="text" [(ngModel)]="newCustomer.firstName"></div>
+        <div class="col-md-3"><input id="lname" type="text" [(ngModel)]="newCustomer.lastName"></div>
+        <div class="col-md-3"><input id="city" type="text" [(ngModel)]="newCustomer.city"></div>
+        <div class="col-md-3"><button class="btn-sub" (click)="addCustomer()">Add Customer</button></div>
+    </div>
+
+    <div class="row cust-detl">
+        <div class="col-md-3" *ngFor="let data of datas">
+            <app-customer-detail [customer]="data" (deleteEvent)="deleteCustomer($event)"></app-customer-detail>
+        </div>
+        
+    </div>
+    
+</div>

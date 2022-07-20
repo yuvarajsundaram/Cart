@@ -1,0 +1,36 @@
+
+<!-- <div class="row header">
+  <div class="col-5"><h1>Customer Manager</h1></div>
+  <div class="col-7">
+    <nav class="breadcrumb">
+      <a *ngFor="let link of links" [routerLink]="link.route" routerLinkActive="active">
+        {{ link.label }}
+      </a>
+    </nav>
+  </div>
+</div> -->
+
+<div class="header">
+  <!-- <div class="col-3"></div> -->
+  <div  class="col-2"></div>
+  <div class="col-4">
+    <span class="title" >
+      <img src="assets/images/customer.PNG">Customer Manager
+    </span>
+  </div>
+  
+  <div class="col-4">
+    <nav class="breadcrumb">
+      <a *ngFor="let link of links" [routerLink]="link.route" routerLinkActive="active">
+        {{ link.label }}
+      </a>
+    </nav>
+  </div>
+</div>
+
+
+  <div class="container">
+
+    <router-outlet></router-outlet>
+
+  </div>

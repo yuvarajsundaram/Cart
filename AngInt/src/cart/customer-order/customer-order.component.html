@@ -1,0 +1,31 @@
+<div class="container data">
+    <div><h4><b>{{getTitle()}}</b></h4></div>
+    <div *ngFor="let customer of getCustomerDto(); let i= index">
+        <div>
+            <h5><b>Orders for {{customer.firstName}} {{customer.lastName}}</b></h5>   
+        </div>
+        <div><b>City: {{customer.city}}</b></div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity </th>
+                    <th>Unit Price </th>
+                    <th>Total </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let order of customer?.orders">
+                    <td>{{order.itemName}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>{{order.price}}</td>
+                    <td>{{order.totalPrice}}</td>
+                </tr>
+                <tr class="total">  
+                    <td colspan="3"></td> 
+                    <td><b>{{getTotal(i)}}</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+/* table {
+    border-collapse: collapse;
+  } */
+
+  table tr td {
+    border: 1px solid black;
+  }
+
+  th {
+    border: 1px solid black;
+  }
+
+  .data {
+    margin-top: 5%;
+  }
+
+  .thead-dark {
+    background-color: #3C99DC;
+    color: white;
+    
+  }
+
+  .total {
+    background-color: #c5e3f9;
+  }
